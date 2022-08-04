@@ -6,6 +6,7 @@
         gap: 65px;
         transition: all .2s ease-in;
         &__logo{
+            display: block;
             width: 135px;
             height: 38px;
             background: url(../img/logo.png) no-repeat;
@@ -179,44 +180,44 @@
         }
     }
 }
-@media only screen and (max-width:650px) {
-    .header{
-        &__nav{
-            gap: 20px;
-            &__logo{
-                width: 100px;
-                height: 25px;
-            }
-            &__items{
-                gap: 10px;
-            }
-            &__item{
-                font-size: 10px;
-            }
-            &__btn{
-                display: flex;
-                align-items: center;
-                justify-content: center;
+// @media only screen and (max-width:650px) {
+//     .header{
+//         &__nav{
+//             gap: 20px;
+//             &__logo{
+//                 width: 100px;
+//                 height: 25px;
+//             }
+//             &__items{
+//                 gap: 10px;
+//             }
+//             &__item{
+//                 font-size: 10px;
+//             }
+//             &__btn{
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: center;
     
-                padding: 10px 16px;
-                background: #BA4270;
-                box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-                border-radius: 24px;
+//                 padding: 10px 16px;
+//                 background: #BA4270;
+//                 box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+//                 border-radius: 24px;
     
-                font-size: 10px;
+//                 font-size: 10px;
     
-                margin-left: auto;
-            }
-        }
-    }
-}
-@media only screen and (max-width:660px) {
-    .header__nav__btn{
-        font-size: 8px;
-        padding: 8px 13px;
-    }
-}
-@media only screen and (max-width:440px) {
+//                 margin-left: auto;
+//             }
+//         }
+//     }
+// }
+// @media only screen and (max-width:660px) {
+//     .header__nav__btn{
+//         font-size: 8px;
+//         padding: 8px 13px;
+//     }
+// }
+@media only screen and (max-width:768px) {
     .header {
         &__nav {
             display: flex;
@@ -270,22 +271,6 @@
                 .hamburger__input:checked ~.nav__mobile__label>.hamburger__lines>.line1{
                     transform: translateY(6px) rotate(-45deg);
                 }
-            }
-        }
-    }
-}
-@media only screen and (max-width:320px) {
-    .header{
-        &__nav{
-            &__svg{
-                width: "50";
-            }
-            gap: 10px;
-            &__items{
-                gap: 5px;
-            }
-            &__item{
-                font-size: 6px;
             }
         }
     }
