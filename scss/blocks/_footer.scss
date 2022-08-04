@@ -1,0 +1,44 @@
+.footer {
+    padding: 38px 0;
+    background: #1B262F;
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 65px;
+
+        &__items {
+            @extend .header__nav__items;
+        }
+
+        &__item {
+            @extend .header__nav__item;
+            color: #FBFCFE;
+        }
+
+        &__icons {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            a{
+                svg:hover path {
+                    fill: #ff0000;
+                }
+            }
+        }
+    }
+
+}
+@media only screen and (max-width:570px) {
+    .footer {
+        padding: 28px 0;
+    
+        &__menu {
+            display: flex;
+            align-items: center;
+            gap: 45px;
+        }
+    
+    }
+}

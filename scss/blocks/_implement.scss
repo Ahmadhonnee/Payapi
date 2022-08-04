@@ -1,0 +1,104 @@
+.implement{
+    padding: 100px;
+    &__screenshot{
+        width: 545px;
+        height: 385px;
+        background: url(../../img/screenshot.svg) no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    &__card{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__card2{
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            top: -25%;
+            left: 80%;
+
+            width: 780px;
+            height: 780px;
+            border-radius: 50%;
+            background: #cbddeb;
+            z-index: -1;
+        }
+    }
+    &__text{
+        width: 445px;
+        &__title{
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 56px;
+            /* identical to box height, or 117% */
+
+            letter-spacing: -0.369231px;
+
+            color: #36536B;
+        }
+        &__desc{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 28px;
+            /* or 187% */
+
+
+            color: #6C8294;
+        }
+    }
+    &__phones{
+        width: 555px;
+        height: 500px;
+        background: url(../img/phones.png) no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
+@media only screen and (max-width:1160px) {
+    .implement{
+        &__text{
+            width: 345px;
+            &__title{
+                font-size: 38px;
+                line-height: 36px;
+                letter-spacing: -0.369231px;
+            }
+            &__desc{
+                font-size: 10px;
+                line-height: 18px;
+            }
+        }
+        &__screenshot{
+            width: 400px;
+            height: 225px;
+            background: url(../../img/screenshot.svg) no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        &__phones{
+            width: 400px;
+            height: 225px;
+            background: url(../img/phones.png) no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+}
+@media only screen and (max-width:768px) {
+    .implement{
+        &__card{
+            flex-direction: column;
+        }
+        &__card2{
+            flex-direction: column-reverse;
+            &::after{
+                display: none;
+            }
+        }
+    }
+}

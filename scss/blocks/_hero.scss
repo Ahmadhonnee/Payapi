@@ -1,0 +1,203 @@
+.hero{
+    padding-bottom: 100px;
+    &__title{
+        position: relative;
+        width: 545px;
+        margin-top: 160px;
+
+        font-family: 'DM Serif Display';
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 72px;
+        letter-spacing: -0.553846px;
+        color: #36536B;
+        transition: all .2s ease-in;
+        &::before{
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: 125%;
+            width: 363px;
+            height: 600px;
+            background: url(../../img/iPhone-X-Mockup.png) no-repeat;
+            background-position: center;
+            background-size: contain;
+            transition: all .2s ease-in;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: -200%;
+            left: 120%;
+
+            width: 780px;
+            height: 780px;
+            border-radius: 50%;
+            background: #cbddeb;
+            z-index: -1;
+            transition: all .2s ease-in;
+        }
+    }
+    &__form{
+        position: relative;
+        display: flex;
+        width: fit-content;
+        margin: 40px 0 20px 0;
+    }
+    &__input{
+        
+        width: 445px;
+        height: 48px;
+        padding: 20px 16px;
+        background: #FBFCFE;
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+        border-radius: 24px;
+        border: none;
+    }
+    &__btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        width: 170px;
+        height: 48px;
+        background: #BA4270;
+        border-radius: 24px;  
+        border: none;  
+
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: -0.115385px;
+        color: #FBFCFE;
+        &:hover{
+            opacity: 0.8;
+        }   
+    }
+    &__question{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #6C8294;
+        margin-left: 15px;
+        a{
+            font-weight: 700;
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
+@media only screen and (max-width:1140px) {
+    .hero{
+        &__title{
+            &::before, &::after{
+                left: 100%;
+            }
+        }
+    }
+}
+@media only screen and (max-width:1070px) {
+    .hero{
+        &__title{
+            width: 500px;
+            font-size: 62px;
+            &::before, &::after{
+                left: 90%;
+            }
+            &::before{
+                width: 263px;
+                height: 500px;
+            }
+        }
+        &__btn{
+
+        }
+    }
+}
+@media only screen and (max-width:768px) {
+    .hero{
+        &__container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &__title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            margin-top: 100px;
+            width: 500px;
+            font-size: 62px;
+            &::after{
+                width: 820px;
+                height: 820px;
+                left: -30%;
+                top: -90%;
+            }
+            &::before{
+                position: static;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+@media only screen and (max-width:570px) {
+    .hero{
+        &__title{
+            font-size: 52px;
+            width: 100%;
+            &::after{
+                width: 820px;
+                height: 820px;
+                left: -30%;
+                top: -90%;
+            }
+            &::before{
+                position: static;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+@media only screen and (max-width:473px) {
+    .hero{
+        // &__form{
+        //     position: relative;
+        //     display: flex;
+        //     width: fit-content;
+        //     margin: 40px 0 20px 0;
+        // }
+        &__input{
+            width: 245px;
+            height: 38px;
+            padding: 10px 8px;
+        }
+        &__btn{
+            position: absolute;
+            top: 0;
+            right: 0;
+    
+            width: 65px;
+            height: 38px;
+            background: #BA4270;
+            border-radius: 24px;  
+            border: none;  
+    
+            font-weight: 700;
+            font-size: 6px;
+            line-height: 18px;
+            letter-spacing: -0.115385px;
+            color: #FBFCFE;
+            &:hover{
+                opacity: 0.8;
+            }   
+        }
+    }
+}
