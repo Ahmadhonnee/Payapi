@@ -201,3 +201,12 @@
         }
     }
 }
+@media only screen and (max-width:473px) {
+    .hero{
+        &__title{
+            font-size: 32px;
+            line-height: 30px;
+            width: 100%;
+        }
+    }
+}
